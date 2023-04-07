@@ -40,4 +40,12 @@ public class TCredito {
         System.out.println("Balance:"+getBalance());
         System.out.println("Limite:"+getLimite());
     }
+    //ejercicio e)
+    public void aumentarBalance(double nbalance){
+        if(this.balance + nbalance < this.limite){
+            this.balance += nbalance;
+        }else{
+            System.out.println("No se puede cargar balance, Limite excedido.");
+        }
+    }
 }
