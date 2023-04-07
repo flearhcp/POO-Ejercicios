@@ -1,6 +1,8 @@
 package Precipitacion;
 import java.util.Scanner;
+
 public class TestPrecipitacion {
+    
     public static void main(String[] args) {
         PrecipitacionAnual p1 = new PrecipitacionAnual();
         Scanner sc = new Scanner(System.in);
