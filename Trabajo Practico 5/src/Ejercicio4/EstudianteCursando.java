@@ -12,6 +12,13 @@ public class EstudianteCursando extends AbsEstudiante{
         if((P1 == 0 && RP1 ==0)||(P2 == 0 && RP2 ==0)||(TPFinal ==0)){return true;}else{return false;}
     }
     public void mostrarEstudiante(){
-                
+        System.out.println("Estudiante:\n"+"Nombre: "+getNombre()+" ,Sexo: "+getSexo()+" ,Dni: "+getDni()+"\n"+"Facultad: "+getFacultad()+" ,Carrera: "+getCarrera()+" ,LU: "+getLU()+" ,Anio de Ingreso: "+getAnioIngreso()+"\n" );
+        if(estaRegular() == true){
+            System.out.println("Alumno regular.");
+        }else if(estaLibre() == true){
+            System.out.println("Alumno libre.");
+        }else{
+            System.out.println("Esta Ausente.");
+        }
     }
 }

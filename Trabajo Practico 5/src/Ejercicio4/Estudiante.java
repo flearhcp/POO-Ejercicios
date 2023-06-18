@@ -14,4 +14,7 @@ public class Estudiante extends Persona {
         this.anioIngreso = anioIngreso;
     }
     public long getLU(){return this.LU;}
+    public String getFacultad() {return facultad;}
+    public String getCarrera() {return carrera;}
+    public int getAnioIngreso() {return anioIngreso;}
 }

@@ -12,7 +12,7 @@ public class VentanaEtiqueta extends JFrame {
 		super(tit);
 		setSize(400, 400);
 		etiqueta = new JLabel();
-		this.icono = new ImageIcon("/src/Ejercicio1/cafe.gif");
+		this.icono = new ImageIcon("Ejercicio1/cafe.gif");
 		etiqueta.setText(tit);
 		etiqueta.setIcon(this.icono);
 		setLayout(new FlowLayout());
