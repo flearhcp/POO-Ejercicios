@@ -25,7 +25,8 @@ public class VentanaPanelRojoBlanco extends JFrame{
 		
 		//creamos oyentes y los registramos a los botones
 		//Completar!!!!
-
+		OyenteBotonB oyenteB = new OyenteBotonB();
+		OyenteBotonR oyenteR = new OyenteBotonR();
 		botonRojo.addActionListener(oyenteR);
 		botonBlanco.addActionListener(oyenteB);
 			
@@ -44,6 +45,7 @@ public class VentanaPanelRojoBlanco extends JFrame{
 		@Override
 		public void actionPerformed(ActionEvent evento) {
 			//Completar	
+			panelColor.setBackground(Color.RED);
 		}
 
 	}
@@ -53,6 +55,7 @@ public class VentanaPanelRojoBlanco extends JFrame{
 		@Override
 		public void actionPerformed(ActionEvent evento) {
 			//Completar	
+			panelColor.setBackground(Color.WHITE);
 		}
 
 	}
