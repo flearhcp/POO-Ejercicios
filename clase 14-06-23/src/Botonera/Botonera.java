@@ -29,19 +29,14 @@ public class Botonera extends JFrame{
         }
     }
     private class Oyente implements ActionListener{
+        private String valorAnt = "";
         @Override
         public void actionPerformed(ActionEvent evento){
             JButton b=(JButton)evento.getSource();
-            String valorAnt = "";
             switch(b.getText()){
                 case "Ok": volerNormal(b, valorAnt);break;
                 case "0","1","2","3","4": valorAnt = (String)evento.getActionCommand();colorRojo(b);break;
             }
-            /*if(valor != "Ok"){
-                colorRojo(b);
-            }else{
-                volerNormal(b, valor);
-            }*/
         }
         public void colorRojo(JButton b){
             b.setBackground(Color.red);

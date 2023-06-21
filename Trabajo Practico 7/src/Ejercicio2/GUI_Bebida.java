@@ -23,6 +23,7 @@ public class GUI_Bebida extends JFrame {
         this.botonCafe = new JButton("Cafe"); this.botonJugo = new JButton("Jugo");
         Oyente oyente = new Oyente();
         botonCafe.addActionListener(oyente); botonJugo.addActionListener(oyente);
+        this.panelBotones.setBackground(Color.BLACK);
         this.panelBotones.add(botonCafe);
         this.panelBotones.add(botonJugo);
     }
@@ -30,6 +31,7 @@ public class GUI_Bebida extends JFrame {
         this.panelImagenes = new JPanel();
         this.etiqueta = new JLabel();
         this.etiqueta.setIcon(new ImageIcon("imagenes/cafe.gif"));
+        this.panelImagenes.setBackground(Color.BLACK);
         this.panelImagenes.add(etiqueta);
     }
 
@@ -38,6 +40,7 @@ public class GUI_Bebida extends JFrame {
         public void actionPerformed(ActionEvent evento){
             String valor = (String)evento.getActionCommand();
             etiqueta.setIcon(new ImageIcon("imagenes/"+valor+".gif"));
+            panelImagenes.setBackground(Color.RED);
         }
     }
 }
